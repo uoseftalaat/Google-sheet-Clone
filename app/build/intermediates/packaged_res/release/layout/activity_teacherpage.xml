@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".teacherpage">
+
+    <EditText
+        android:id="@+id/table_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="enter the quiz id"
+        android:textSize="20dp"
+        android:textStyle="bold"></EditText>
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="120dp"
+        android:hint="enter the question!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></EditText>
+
+    <EditText
+        android:id="@+id/answer_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_marginHorizontal="80dp"
+        android:hint="A.______"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></EditText>
+
+    <EditText
+        android:id="@+id/answer_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_A"
+        android:layout_marginHorizontal="80dp"
+        android:hint="B.______"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></EditText>
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/answer_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_B"
+        android:layout_marginHorizontal="80dp"
+        android:hint="C.______"
+        android:textSize="18dp"
+        android:textStyle="bold"></EditText>
+
+    <EditText
+        android:id="@+id/answer_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_C"
+        android:layout_marginHorizontal="80dp"
+        android:hint="D.______"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></EditText>
+
+    <EditText
+        android:id="@+id/right_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_D"
+        android:layout_marginHorizontal="80dp"
+        android:hint="the Answer word"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></EditText>
+
+    <Button
+        android:id="@+id/Q_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_answer"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="NEXT"
+        android:visibility="invisible"></Button>
+
+    <Button
+        android:id="@+id/Q_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_answer"
+        android:layout_marginStart="260dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="start"></Button>
+
+    <Button
+        android:id="@+id/Q_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="finish"
+        android:visibility="invisible"></Button>
+
+
+
+
+</RelativeLayout>

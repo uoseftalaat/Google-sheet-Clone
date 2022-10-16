@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".teacherpage">
+
+    <EditText
+        android:id="@+id/id_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="the quiz id"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:visibility="visible"></EditText>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/question_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="120dp"
+        android:hint="the question"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/answer_A_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_student_page"
+        android:layout_marginHorizontal="80dp"
+        android:hint="A.______"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+
+    <TextView
+        android:id="@+id/answer_B_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_A_student_page"
+        android:layout_marginHorizontal="80dp"
+        android:hint="B.______"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="C.______"
+        android:layout_below="@id/answer_B_student_page"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:id="@+id/answer_C_student_page"
+        android:layout_marginHorizontal="80dp"></TextView>
+
+    <TextView
+        android:id="@+id/answer_D_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_C_student_page"
+        android:layout_marginHorizontal="80dp"
+        android:hint="D.______"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+
+    <EditText
+        android:id="@+id/right_answer_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_D_student_page"
+        android:layout_marginHorizontal="80dp"
+        android:hint="the Answer word"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="invisible"></EditText>
+
+    <Button
+        android:id="@+id/next_student_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_answer_student_page"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="NEXT"
+        android:visibility="invisible"></Button>
+
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/next_student_page"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="start"
+        android:visibility="visible"></Button>
+
+
+
+</RelativeLayout>
